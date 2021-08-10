@@ -1,0 +1,91 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.layout-select-row {
+  margin-bottom: 5px;
+}
+
+.layout-select-row:hover {
+  cursor: pointer;
+}
+
+.layout-select-col {
+  background-color: #00abff;
+  border-radius: 3px;
+  color: white;
+  padding: 3px;
+}
+
+.layout-select-col:not(:first-child) {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-left: solid 1px white;
+}
+
+.layout-select-col:not(:last-child) {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-right: solid 1px white;
+}
+
+.layout-widget-accordion {
+  background-color: #f3f3f3;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 2px;
+  border: solid 1px #d6d6d6;
+  text-align: left;
+  padding-left: 15px;
+}
+
+.layout-widget-accordion:hover {
+  cursor: pointer;
+}
+
+.layout-widget-accordion:first-child {
+  margin-top: 20px;
+}
+
+.display {
+  height: 100%;
+}
+
+html, body, #root, .App {
+  height: 100%;
+}
